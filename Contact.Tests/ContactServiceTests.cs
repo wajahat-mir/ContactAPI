@@ -8,7 +8,7 @@ namespace Contact.Tests
     public class ContactServiceTests
     {
         [Fact]
-        public void GetRulesByAccount_ShouldReturnNothing_WhenNull()
+        public void GetContacts_ShouldReturnNothing_WhenEmpty()
         {
             var contactRepo = ContactRepositoryMock.GetRules_ReturnsNullDataSet();
             var contactService = new ContactService(contactRepo.Object);
