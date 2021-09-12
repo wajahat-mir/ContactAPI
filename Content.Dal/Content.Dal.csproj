@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\Content.Bll.Core\Content.Bll.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Bll.Core\Content.Bll.Core.csproj" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
