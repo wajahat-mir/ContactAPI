@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.Bll.Core\Content.Bll.Core.csproj" />
+    <ProjectReference Include="..\Content.Bll\Content.Bll.csproj" />
+    <ProjectReference Include="..\Content.Dal\Content.Dal.csproj" />
   </ItemGroup>
 
 </Project>
