@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Bll.Core\Content.Bll.Core.csproj" />
-    <ProjectReference Include="..\Content.Bll\Content.Bll.csproj" />
-    <ProjectReference Include="..\Content.Dal\Content.Dal.csproj" />
+    <ProjectReference Include="..\Content.Bll.Core\Contact.Bll.Core.csproj" />
+    <ProjectReference Include="..\Content.Bll\Contact.Bll.csproj" />
+    <ProjectReference Include="..\Content.Dal\Contact.Dal.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Content.Bll.Core\Content.Bll.Core.csproj" />
+    <ProjectReference Include="..\Content.Bll.Core\Contact.Bll.Core.csproj" />
   </ItemGroup>
 
 </Project>
