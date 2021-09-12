@@ -13,7 +13,7 @@ namespace ContentAPI.Extensions
     {
         public static IServiceCollection AddDependencyInjections(this IServiceCollection services)
         {
-            services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddSingleton<IContactRepository, ContactRepository>();
             services.AddScoped<IContactService, ContactService>();
             return services;
         }
