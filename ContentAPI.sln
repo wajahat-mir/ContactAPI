@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContentAPI", "ContentAPI\ContentAPI.csproj", "{89595912-F3FC-4912-A0A4-A3622C1D6A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactAPI", "ContentAPI\ContactAPI.csproj", "{89595912-F3FC-4912-A0A4-A3622C1D6A88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Content.Bll", "Content.Bll\Content.Bll.csproj", "{347B499E-8E5B-4BDE-9A6A-EBFC417AF9CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Bll", "Content.Bll\Contact.Bll.csproj", "{347B499E-8E5B-4BDE-9A6A-EBFC417AF9CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Content.Bll.Core", "Content.Bll.Core\Content.Bll.Core.csproj", "{C75A0BE7-F6ED-47A4-8CCD-8D115605D3DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Bll.Core", "Content.Bll.Core\Contact.Bll.Core.csproj", "{C75A0BE7-F6ED-47A4-8CCD-8D115605D3DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Content.Dal", "Content.Dal\Content.Dal.csproj", "{0528DA8B-A4F7-455D-B565-5A5EA401AFA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Dal", "Content.Dal\Contact.Dal.csproj", "{0528DA8B-A4F7-455D-B565-5A5EA401AFA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Tests", "Contact.Tests\Contact.Tests.csproj", "{B6A9FC73-FAD6-4B47-A9D4-3C0C3BD1E56F}"
 EndProject
