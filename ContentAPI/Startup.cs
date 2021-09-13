@@ -29,6 +29,7 @@ namespace ContentAPI
         {
             services.AddDependencyInjections();
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ContentAPI", Version = "v1" });

@@ -10,7 +10,7 @@ namespace Contact.Tests
         [Fact]
         public void GetContacts_ShouldReturnNothing_WhenEmpty()
         {
-            var contactRepo = ContactRepositoryMock.GetRules_ReturnsNullDataSet();
+            var contactRepo = ContactRepositoryMock.GetContacts_ReturnsNull();
             var contactService = new ContactService(contactRepo.Object);
             
             var result = contactService.GetContacts();
