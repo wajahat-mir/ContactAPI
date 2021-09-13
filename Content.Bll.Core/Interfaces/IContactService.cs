@@ -11,5 +11,7 @@ namespace Content.Bll.Core.Interfaces
     {
         IEnumerable<ContactModel> GetContacts();
         ContactModel CreateContact(ContactModel contact);
+        ContactModel GetContactById(int id);
+        ContactModel UpdateContact(ContactModel contact);
     }
 }
