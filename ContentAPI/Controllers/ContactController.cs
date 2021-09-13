@@ -1,4 +1,7 @@
-﻿using Content.Bll.Core.Interfaces;
+﻿using AutoMapper;
+using Content.Bll.Core.Interfaces;
+using Content.Bll.Core.Models;
+using Content.ContentAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -14,11 +17,13 @@ namespace ContentAPI.Controllers
     {
         private readonly ILogger<ContactController> _logger;
         private readonly IContactService _contactService;
+        private readonly IMapper _mapper;
 
-        public ContactController(ILogger<ContactController> logger, IContactService contactService)
+        public ContactController(ILogger<ContactController> logger, IContactService contactService, IMapper mapper)
         {
             _logger = logger;
             _contactService = contactService;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -27,7 +32,15 @@ namespace ContentAPI.Controllers
             var contacts = _contactService.GetContacts();
             if (contacts == null || contacts.Count() == 0)
                 return NoContent();
-            return Ok();
+            return Ok(contacts);
+        }
+
+        [HttpPost]
+        public IActionResult Post(ContactInput contactInput)
+        {
+            var contact = _mapper.Map<ContactModel>(contactInput);
+            var createdContact = _contactService.CreateContact(contact);
+            return Ok(createdContact);
         }
     }
 }

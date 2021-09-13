@@ -11,7 +11,7 @@ namespace Contact.Tests.RepositoryMocks
 {
     public class ContactRepositoryMock
     {
-        public static Mock<IContactRepository> GetRules_ReturnsNullDataSet()
+        public static Mock<IContactRepository> GetContacts_ReturnsNull()
         {
             var mock = new Mock<IContactRepository>();
             IEnumerable<ContactModel> contacts = null;

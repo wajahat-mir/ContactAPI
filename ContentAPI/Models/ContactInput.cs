@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Content.Bll.Core.Models
+namespace Content.ContentAPI.Models
 {
-    public class ContactModel
+    public class ContactInput
     {
-        public int id { get; set; }
         public string name { get; set; }
         public string title { get; set; }
         public string company { get; set; }

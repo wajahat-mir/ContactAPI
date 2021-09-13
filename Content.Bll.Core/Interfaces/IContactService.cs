@@ -10,5 +10,6 @@ namespace Content.Bll.Core.Interfaces
     public interface IContactService
     {
         IEnumerable<ContactModel> GetContacts();
+        ContactModel CreateContact(ContactModel contact);
     }
 }

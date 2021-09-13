@@ -21,5 +21,10 @@ namespace Content.Bll.Services
         {
             return _contactRepository.GetContacts();
         }
+
+        public ContactModel CreateContact(ContactModel contact)
+        {
+            return _contactRepository.CreateContact(contact);
+        }
     }
 }
