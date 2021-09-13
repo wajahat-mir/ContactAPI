@@ -26,5 +26,18 @@ namespace Content.Bll.Services
         {
             return _contactRepository.CreateContact(contact);
         }
+
+        public ContactModel GetContactById(int id)
+        {
+            return _contactRepository.GetContactById(id);
+        }
+
+        public ContactModel UpdateContact(ContactModel contact)
+        {
+            var existsContact = _contactRepository.GetContactById(contact.id);
+            if(existsContact != null)
+                return _contactRepository.UpdateContact(contact);
+            return null;
+        }
     }
 }

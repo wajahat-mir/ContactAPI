@@ -30,5 +30,18 @@ namespace Content.Dal.Repositories
             contacts.Add(maxId + 1, contact);
             return contact;
         }
+
+        public ContactModel GetContactById(int id)
+        {
+            if (contacts.ContainsKey(id))
+                return contacts[id];
+            return null;
+        }
+
+        public ContactModel UpdateContact(ContactModel contact)
+        {
+            contacts[contact.id] = contact;
+            return contact;
+        }
     }
 }
